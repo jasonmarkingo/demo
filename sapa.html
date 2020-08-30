@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar with Search Box | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span></div>
+        <div class="logo">
+            VIETNAM TRAVEL</div>
+        <div class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dulich3mien.html">Travel</a></li>
+            <li><a href="images.html">Album </a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span></div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span></div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+    <div class="content">
+        <header class="space"></header>
+        <div class="space text">
+        </div>
+
+
+
+
+    </div>
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = () => {
+            form.classList.add("active");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+    </script>
+    <p><img src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-07/sapa.jpg?itok=64PxYHbz">
+    </p>
+    <div>
+
+        <h1>TOP THINGS TO DO IN SAPA:</h1>
+
+        <h2>Summit Mount Fansipan</h2>
+        <h4>Until 2016, those who wanted to conquer the 3,143m summit of Mount Fansipan had to trek for two or three
+            days. Today, a 6km cable car journey will whisk you to the top in just 15 minutes. On a clear day, the views
+            from the ‘Roof of Indochina’ are unmatched. Another option for knock-out views is Vietnam’s highest mountain
+            pass, the Ô Quy Hồ , also known as Trạm Tôn. Hire some wheels and ride skywards from Sapa. </h4>
+        <h2>Visit an ethnic minority market</h2>
+        <h4>The most famous and visually striking market in the area is Bắc Hà, three hours from town. Every Sunday this
+            sleepy little town bursts into life as hundreds of traders from the Dzao, Hàn, Xa Fang, Tay and Thai people
+            descend on the market, decked out in their finest traditional garb. There is a riot of colour, the sound of
+            excited haggling, and the scent of pho cooking over open fires.</h4>
+        <h2>Go trekking in the hills</h2>
+        <h4>Sapa offers some of Vietnam's best trekking. If you can rise early and beat the crowds, Cát Cát and Tả Phìn
+            are two of the most popular options for day treks without a guide. Further into the landscape, overnight
+            treks will allow you enough time to wander through the rice terraces, bathe in waterfalls and sleep in a
+            traditional family home and experience community life and farming firsthand.</h4>
+        <h2>Stay in a mountain lodge </h2>
+        <h4>Stay outside the tourist hub of Sapa in more simple comfort at a mountain-top lodge. Sapa is home to
+            excellent lodges and homestays, where you'll find individual bungalows with private balconies overlooking
+            verdant valleys. Set among the rice terraces, you’re likely to brush shoulders with farmers and other local
+            people as they go about their daily lives.</h4>
+        <h2>Get active</h2>
+        <h4>Mountain biking is an excellent way to get out and explore some of the lesser-visited corners of Sapa, and
+            there are many multi-day adventures of varying lengths. Be sure to pencil in your visit for the Vietnam
+            Mountain Marathon. This mountaintop race attracts over 4000 competitors who run buffalo-beaten trails
+            ranging from a bamboozling 100km to a more manageable 10km.</h4>
+
+        <h2>Sapa Weather</h2>
+        <h4>The best time to visit Sapa is in September and October when the rice terraces are at their most splendid;
+            or in April and May when the weather is fine and the skies clear. June to August is an ideal period for
+            those who don't mind hot weather.</h4>
+        <h2>Transport to Sapa</h2>
+        <h4>Overnight trains offer the most romantic way to reach Sapa via the province capital, Lào Cai. Alternatively
+            regular buses run from Hanoi with a journey time of around 6 hours, and there are now shuttle vans you can
+            book from the capital to your hotel in the centre of Sapa. </h4>
+
+    </div>
+
+</body>
+
+</html>

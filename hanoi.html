@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar with Search Box | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span></div>
+        <div class="logo">
+            VIETNAM TRAVEL</div>
+        <div class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dulich3mien.html">Travel</a></li>
+            <li><a href="images.html">Album </a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span></div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span></div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+    <div class="content">
+        <header class="space"></header>
+        <div class="space text">
+        </div>
+
+
+
+    </div>
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = () => {
+            form.classList.add("active");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+    </script>
+    <div>
+
+        <p><img
+                src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-06/vietnam-travel-5.jpg?itok=XVnHP3ty">
+        </p>
+        <h1>TOP THINGS TO DO IN HANOI:</h1>
+
+        <h2>Sample the street food</h2>
+
+        <h4>A wander around a morning market provides a tantalising hint of what you can expect to hit your table in
+            Hanoi. For an authentic taste of Hanoi, look no further than the street kitchens of the Old Quarter. Phở
+            noodle soup is king of cuisines here, with steaming pots of its star anise-infused broth simmering on every
+            corner; while every day, the irresistible scent of bún chả fills the air as barbecued pork sizzles over hot
+            coals. In recent years a growing band of superb international dining rooms have emerged, serving everything
+            from contemporary tapas to fusion fare</h4>
+
+        <h2>Stroll the Old Quarter</h2>
+
+        <h4>Hanoi’s Old Quarter serves up a sensory overload for the eyes, ears and nose. Wisps of incense drift out
+            onto streets from ancient temples painted a riot of reds and oranges, while in a far-flung corner the clang
+            of a blacksmith’s hammer mingles with a mobile fruit seller’s call. To fully immerse yourself, grab a map to
+            explore. Or jump in a cyclo and take a tour of this intoxicating maze of markets, street kitchens, shop
+            houses, and more. <h/4>
+
+                <h2>Explore Hanoi's cafe culture</h2>
+
+                <h4>It is by taking a seat and waiting as your coffee slowly filters that the Vietnamese capital can
+                    best be understood. Fast-paced on the surface, the true rhythm of city life is far from hurried.
+                    Alongside the thousands of coffee houses selling traditional Vietnamese coffee, an ever-growing band
+                    of unique coffee shops serve espressos and macchiatos in surroundings rivaling the world’s coolest
+                    caffeine dens.</h4>
+
+                <h2>Check out the art scene</h2>
+
+                <h4>Hanoi has long had a reputation as Vietnam’s art capital, with the elegant Fine Arts Museum housing
+                    the country’s foremost collection, including ancient Cham artifacts and impressionist pieces. For
+                    something more contemporary, head for Manzi--an art space-cum-cafe--or the Vietnam Art Gallery. Both
+                    are top places to take the pulse of the city’s art scene. Smaller gallery spaces include Nha San
+                    Collective at the up-and-coming Hanoi Creative City urban project.</h4>
+
+                <h2>Join the locals at Hoan Kiem Lake</h2>
+                <h4>Hoan Kiem lake rests at the heart of Hanoi and embodies the soul of the city. Every morning it comes
+                    alive with walkers, aerobics classes, badminton, ballroom dancers, and even a laughing yoga group.
+                    It bursts back into life at sunset, and after dark, is again thronged with locals out to take the
+                    evening air. A little further north the lesser-visited Truc Bach and West Lake shouldn’t be
+                    missed--their calm temples and lakeside cafes provide peaceful enclaves away from the buzz of
+                    downtown</h4>
+                <h2>Ha Noi Weather</h2>
+                <h4>The climate is inviting from April to June, but Hanoi is particularly beautiful in May when its many
+                    trees come into bloom – orange, white, purple and red flowers elevate the already beguiling street
+                    scenes to another level. October and November are also excellent months to visit when temperatures
+                    are cooler.</h4>
+
+                <h2>Transport to Ha Noi</h2>
+                <h4>Hanoi is served by Noi Bai international airport as well as trains. A bus network links all major
+                    destinations within the country and international buses also link the capital with Laos.</h5>
+    </div>
+</body>
+
+</html>
